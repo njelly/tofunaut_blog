@@ -1,0 +1,18 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+img.brand-image {
+    height: 40px;
+}
+
+.post-header {
+    margin-top: 40px;
+    margin-bottom: $spacing-unit;
+}
+
+h2.post-list-heading {
+    margin-top: 40px;
+}
