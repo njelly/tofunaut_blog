@@ -2,7 +2,7 @@
 layout: project
 name: "Tofunaut"
 image: /assets/project_cover_website.png
-github: https://github.com/njelly/ludumdare44
+github: https://github.com/njelly/tofunaut_blog
 ---
 
 Whoa meta.
