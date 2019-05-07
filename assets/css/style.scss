@@ -109,4 +109,26 @@ header.site-header {
     }
 }
 
+img.project-screenshot {
+    width: 100%;
+    margin: $spacing-unit 0px $spacing-unit 0px;
+}
 
+ul.projects-gallery {
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    margin: 0 0 0 0;
+}
+ul li.project-thumbnail {
+    display: inline;
+    list-style: none;
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+ul li.project-thumbnail img {
+    width: 100%;
+}

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="projects">
+
+    {% assign rows = site.posts.size | divided_by: 3.0 | ceil %}
+
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title | escape }}</h1>
+    </header>
+
+    <div class="post-content">
+        <ul class="projects-gallery">
+            {% for project in site.projects %}
+            <a href="{{project.url}}"><li class="project-thumbnail"><img src="{{project.image}}" alt="{{project.title}}" /></li></a>
+            {% endfor %}
+        </ul>
+    </div>
+
+</article>

@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article class="project">
+
+    <header class="post-header">
+        {% if page.name %}
+        <h1 class="post-title">{{ page.name | escape }}</h1>
+        {% else %}
+        <h1 class="post-title">{{ page.title | escape }}</h1>
+        {% endif %}
+    </header>
+
+    {% if page.itchio %}
+    <p><a href="{{page.itchio}}"><img class="svg-icon grey" src="/assets/itchio-textless-black.svg" />Play on itch.io</a></p>
+    {% endif %}
+    {% if page.github %}
+    <p><a href="{{page.github}}"><img class="svg-icon grey" src="/assets/GitHub-Mark-32px.png" />Source code available on GitHub</a></p>
+    {% endif %}
+
+    {% if page.image %}
+    <div>
+        <img class="project-screenshot" src="{{page.image}}" />
+    </div>
+    {% endif %}
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+    
+</article>
