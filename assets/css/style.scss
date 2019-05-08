@@ -109,26 +109,44 @@ header.site-header {
     }
 }
 
-img.project-screenshot {
-    width: 100%;
-    margin: $spacing-unit 0px $spacing-unit 0px;
-}
-
-ul.projects-gallery {
+div.project-grid {
+    display: inline-grid;
     padding: 0;
-    list-style-type: none;
-    width: 100%;
-    margin: 0 0 0 0;
+    grid-template-columns: auto;
 }
-ul li.project-thumbnail {
-    display: inline;
-    list-style: none;
-    width: 50%;
-    float: left;
-    text-align: center;
-    margin: 0px 0px 0px 0px;
+@media screen and (min-width: $on-medium) {
+    div.project-grid {
+        grid-template-columns: auto auto;
+    }
 }
 
-ul li.project-thumbnail img {
-    width: 100%;
+div.project-thumbnail {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+div.project-caption {
+    color: white;
+    background-color: #00000088;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px 10px 10px 10px;
+    margin: 0;
+}
+
+div.project-thumbnail img{
+    padding: 0;
+    margin: 0;
+    transition: transform .2s; 
+}
+
+div.project-thumbnail img:hover{
+    transform: scale(1.1);
+}
+
+div.project-caption a{
+    text-decoration-color: white;
 }

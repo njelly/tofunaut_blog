@@ -10,11 +10,16 @@ layout: default
     </header>
 
     <div class="post-content">
-        <ul class="projects-gallery">
-            {% for project in site.projects %}
-            <a href="{{project.url}}"><li class="project-thumbnail"><img src="{{project.image}}" alt="{{project.title}}" /></li></a>
-            {% endfor %}
-        </ul>
+            <div class="project-grid">
+                {% for project in site.projects %}
+                <a href="{{project.url}}">
+                    <div class="project-thumbnail">
+                        <img src="{{project.image}}" alt="{{project.title}}" />
+                        <div class="project-caption">{{project.name}}</div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
     </div>
 
 </article>
