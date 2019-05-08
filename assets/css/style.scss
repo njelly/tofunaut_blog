@@ -150,3 +150,8 @@ div.project-thumbnail img:hover{
 div.project-caption a{
     text-decoration-color: white;
 }
+
+img.project-screenshot {
+    width: 100%;
+    margin: $spacing-unit/2 0px $spacing-unit 0px;
+}
