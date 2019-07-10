@@ -11,7 +11,7 @@ permalink: /:categories/:year/:month/:day/:title
 
 (jump to 7:30 in the video for the relevant question)
 
-There's only one answer to the question asked about DACA, nothing else matters: all people in the world deserve a safe place in America. We are hypocrites the moment we start putting any standard whatsoever on who is allowed to become "American." We don't need "immigration reform" we need more immigrants, period. Every single person searching for a better life should come here. Everyone in the world. If you make the journey to cross the border than you have done more to become "American" than most people ever will.
+There's only one answer to the question asked about DACA, nothing else matters: all people in the world deserve a safe place in America. We are hypocrites the moment we start putting any standard whatsoever on who is allowed to become "American." We don't need "immigration reform" we need more immigrants, period. Every single person searching for a better life should come here. Everyone in the world. If you make the journey to cross the border then you have done more to become "American" than most people ever will.
 
 America is not natural, it is what we make it. We can choose to have racist immigration laws or we can choose to use our wealth to protect the most vulnerable people in the world: people without homes, who have fled their country with nothing but a desperate hope that we will treat them better than the oppressors they are escaping.
 
