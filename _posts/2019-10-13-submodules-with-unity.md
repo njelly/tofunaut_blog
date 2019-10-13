@@ -9,17 +9,21 @@ permalink: /:categories/:year/:month/:day/:title
 
 ### The Problem
 
-Git has a useful tool for sharing code between repos with submodules. Essentially, submodules are separate git repositories within a repository, allowing for unrelated but useful code to be included in multiple projects. Imagine a large company with multiple projects going on at the same time, with each project using the same underlying API. The code for the API can exist and be maintained in its own repo, and whenever a fix or feature is added, all other projects in the company can receive the new code by simply running the command git submodule update. 
+Git has a useful tool for sharing code between repos with submodules. Essentially, submodules are separate git repositories within a repository, allowing for unrelated but useful code to be included in multiple projects. Imagine a large company with multiple projects going on at the same time, with each project using the same underlying API. The code for the API can exist and be maintained in its own repo, and whenever a fix or feature is added, all other projects in the company can receive the new code by simply running the command 
+
+```
+git submodule update
+```
 
 Neat.
 
 What about Unity? Typically, Unity repositories contain in their root directory folders like Assets, ProjectSettings, Packages, etc., and to include all of this inside a second Unity project can be extremely inefficient or even prevent the project from compiling in the first place. But still, it would be very nice to share common code, tools, and assets across all our projects! How can we do that efficiently?
 
-Thankfully, with clever use of git submodules and symlinks, we can get a stable, useful solution that allows us to continue developing common code (or any asset, really) separately from the projects that use it, and to reliably share updates to that code with all those projects.
+Thankfully, with clever use of git submodules and symlinks, we can get a stable, efficient solution that allows us to continue developing common code (or any asset, really) separately from the projects that use it, and to reliably share updates to that code with all those projects.
 
 ### The Solution
 
-For my projects, I have two main bodies of code that I’ve created with the intention of speeding up the development of my other projects. These repositories are called TofuCore (general utilities and quality-of-life tools) and TofuUnity (unity-specific tools and frameworks). TofuCore is not a Unity project but TofuUnity is, and includes tests, examples, and other assets to showcase how the code can be used and that it even works in the first place. I really don’t want to include everything in here in my other projects, but I do want bits and pieces.
+I have two main bodies of code that I’ve created with the intention of speeding up the development of my other projects. These repositories are called TofuCore (general utilities and quality-of-life tools) and TofuUnity (unity-specific tools and frameworks). TofuCore is not a Unity project but TofuUnity is, and includes tests, examples, and other assets to showcase how the code can be used and that it even works in the first place. I really don’t want to include everything in here in my other projects, but I do want bits and pieces.
 
 I can include these projects as submodules easily enough, but to ensure they remain separate from the main Unity project, I can put them in a directory called Submodules in my repos root directory with the commands
 
@@ -63,7 +67,7 @@ ln -s ../../../Submodules/TofuUnity/Assets/Scripts/Animation/
 Or on Windows:
 
 ```
-Mklink /d ..\..\..\Submodules\TofuUnity\Assets\Scripts\Animation\
+mklink /d ..\..\..\Submodules\TofuUnity\Assets\Scripts\Animation\
 ```
 
 ### In Conclusion
