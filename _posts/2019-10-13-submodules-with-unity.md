@@ -29,7 +29,7 @@ I can include these projects as submodules easily enough, but to ensure they rem
 
 ```
 git submodule add git@github.com:njelly/TofuCore.git Submodules/TofuCore
-git submodule add git@github.com:njelly/TofuCore.git Submodules/TofuUnity
+git submodule add git@github.com:njelly/TofuUnity.git Submodules/TofuUnity
 ```
 
 (these are private repos, sorry!)
