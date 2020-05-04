@@ -17,7 +17,7 @@ title: Tofunaut
 author: Nathaniel Ellingson
 email: tofunaut@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Tofunaut is a devblog, a portfolio, an opinion column, and a game developer from Salt Lake City.
+  A game developer from Salt Lake City.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://tofunaut.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tofunaut
