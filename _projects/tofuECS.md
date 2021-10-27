@@ -1,7 +1,7 @@
 ---
 layout: project
 name: "TofuECS"
-image: /assets/tofuecs_logo
+image: /assets/project_cover_tofuecs.png
 github: https://github.com/njelly/TofuECS
 ---
 
